@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/book_photo"
+        android:layout_width="110dip"
+        android:layout_height="175dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dip"
+        android:layout_marginRight="4dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/sun2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/image_tupian"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.application.booktravel.widget.RoundImageView
+                android:id="@+id/user_photo"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/yuanxing"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/user_nickname"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dip"
+                android:text="用户昵称"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/bookname"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dip"
+                android:text="书籍名称"
+                android:textSize="16sp" 
+                android:singleLine="true"
+                android:ellipsize="end"/>
+        </LinearLayout>
+         <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:text="话题标题"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_neirong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:ellipsize="end"
+            android:lines="3" />
+     <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_dianzan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/taoxin" />
+
+            <TextView
+                android:id="@+id/text_dianzajn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/button_pinglun"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="12dip"
+                android:background="@drawable/taoxin"/>
+
+            <TextView
+                android:id="@+id/text_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>
+    
